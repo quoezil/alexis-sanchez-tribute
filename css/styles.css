@@ -1,7 +1,8 @@
-body {
-  overflow: hidden;
-  font-family: 'PT Sans', 'Open Sans', sans-serif;
-  background-color: #fff;
+.img-player {
+  height: 100vh;
+  background: url("../images/img-alexis.png");
+  background-size: cover;
+  background-repeat: no-repeat
 }
 
 .player-bio-container {
@@ -9,7 +10,9 @@ body {
 }
 
 .player-bio {
-  margin-top: 15%;
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
 }
 
 .player-name {
@@ -64,4 +67,23 @@ a:hover {
 
 .made-by {
   color: #ddc1a2;
+}
+
+@media screen and (max-width: 992px) {
+  .img-player {
+    height: 50vh;
+  }
+  .player-bio {
+    position: absolute;
+    top: 0%;
+    transform: translateY(-0%);
+    padding: 16px 0 80px 0;
+  }
+  .player-bio-container {
+    height: 0;
+  }
+  .mobile-footer {
+    text-align: left;
+    color: red;
+  }
 }
