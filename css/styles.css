@@ -73,13 +73,24 @@ a:hover {
   .img-player {
     height: 50vh;
   }
+
+  .player-bio-container {
+    height: 0;
+}
+
   .player-bio {
-    top: 0%;
+    top: 0;
     transform: translateY(-0%);
     padding: 16px 0 80px 0;
   }
 
   .mobile-footer {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .player-name {
+    font-size: 48px;
   }
 }
